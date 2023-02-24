@@ -1,0 +1,21 @@
+body{
+    background-image:url(Images/Food.jpg);
+    background-position: top;
+    background-repeat: repeat;
+    background-size: cover;
+}
+p{
+    color: darkred;
+}
+a:visited{
+    color:aqua;
+}
+a:link{
+    color: darkblue;
+}
+a:hover{
+    color:darkred;
+}
+a:active{
+    color:white
+}
