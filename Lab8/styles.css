@@ -95,7 +95,7 @@ span.rotate{
     transform: rotate(90deg);
     z-index: 1;
     top: 31rem;
-    right: -9%;
+    right: -9%;/*Use rem instead of % here. The % only works with certain page sizes*/
 }
 
 @media (min-width:1000px){
