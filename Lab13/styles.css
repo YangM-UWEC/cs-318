@@ -19,6 +19,12 @@ nav>a{
     font-weight: 800;
     display: inline-block;
     margin: 1rem 1rem 1rem 0;
+    transition-property: opacity;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+nav>a:hover{
+    opacity: .7;
 }
 .sidenav{
     background-color: #5c765a;
@@ -29,13 +35,40 @@ nav>a{
     color: #0f0f0f;
     padding: .5rem 1rem;
     display: inline-block;
-    margin: .5rem .5rem 0 0;
+    margin: 1rem 2rem;
+    position: relative;
+    transition: opacity .2s ease-in-out, left .5s ease-in-out;
+}
+.sidenav>a:before{
+    position: absolute;
+    width: 1.7rem;
+    height: 2.5rem;
+    top: -.6rem;
+    content: url(Images/scroll-left.svg);
+    left: -1.6rem;
+}
+.sidenav>a:after{
+    position: absolute;
+    width: 1.7rem;
+    height: 2.5rem;
+    top: -.6rem;
+    content: url(Images/scroll-right.svg);
+    right: -1.6rem;
 }
 main{
     padding: 1rem;
 }
 section{
     padding: 0 1rem;
+    padding-left: 5rem;
+    position: relative;
+}
+section:before{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 0;
+    top: 0;
 }
 .title{
     margin: 0;
@@ -55,5 +88,66 @@ section{
     .sidenav>a{
         display:block;
         text-align: right;
+        margin: 2rem;
+        left: -10rem;
     }
+    .sidenav>a:hover{
+        left: 0;
+        opacity: .7;
+    }
+    
+}
+#odin:before{
+    content: url(Images/odin.svg.svg);
+}
+#thor:before{
+    content: url(Images/thor.svg);
+}
+#loki:before{
+    content: url(Images/loki_adobe_express.svg);
+}
+#frigg:before{
+    content: url(Images/frigg_adobe_express.svg);
+}
+#freyja:before{
+    content: url(Images/freyja_adobe_express.svg);
+}
+#baldr:before{
+    content: url(Images/baldr2_adobe_express.svg);
+}
+#freyr:before{
+    content: url(Images/freyr_adobe_express.svg);
+}
+#heimdallr:before{
+    content: url(Images/heim_adobe_express.svg);
+}
+#yggdrasil:before{
+    content: url(Images/yggd_adobe_express.svg);
+}
+#asgard:before{
+    content: url(Images/asgard_adobe_express.svg);
+}
+#vanaheimr:before{
+    content: url(Images/vana_adobe_express.svg);
+}
+#alfheimr:before{
+    content: url(Images/afl_adobe_express.svg);
+}
+#midgard:before{
+    content: url(Images/migard_adobe_express.svg);
+}
+#jotunheimr:before{
+    content: url(Images/jot_adobe_express.svg);
+}
+#muspelheim:before{
+    content: url(Images/musp_adobe_express.svg);
+}
+#svartalfar:before{
+    content: url(Images/svar_adobe_express.svg);
+}
+#niflheim:before{
+    content: url(Images/nif_adobe_express.svg);
+}
+#nidavellir:before{
+    content: url(Images/nidave_adobe_express.svg);
 }
