@@ -1,0 +1,72 @@
+body{
+    background-color: skyblue;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.ball{
+    width: 20rem;
+    height: 20rem;
+    position: fixed;
+    display: block;
+    bottom: 10rem;
+    animation-name: soccer;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+
+}
+.field{
+    position: fixed;
+    width: 100%;
+    height: 10rem;
+    z-index: -1;
+    background-color: green;
+    bottom: 0;
+}
+.goal{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: -2;
+    right: 35%;
+    bottom: 28rem;
+}
+.leg{
+    width: 30rem;
+    height: 30rem;
+    position: fixed;
+    z-index: 1;
+    bottom: -20rem;
+    right: 20rem;
+    animation-name: leg;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes soccer{
+    from{
+        left: 0;
+        transform:rotateZ(0deg) scale(1);
+    }
+    50%{
+        left: 450px;
+        transform:rotateZ(180deg) scale(2);
+    }
+    to{
+        left: 900px;
+        transform:rotateZ(360deg);
+    }
+}
+@keyframes leg{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(180deg);
+    }
+    
+}

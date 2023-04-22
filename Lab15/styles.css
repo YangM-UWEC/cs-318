@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(9, 2, 29);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.rover{
+    width: 30rem;
+    height: 30rem;
+    position: fixed;
+    display: block;
+    bottom: 10.5rem;
+    left: 10%;
+    animation-name: rover;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.rover:after{
+    content: url(dish.svg);
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    left: 3rem;
+    top: 2rem;
+    z-index: 1;
+    transform-origin: center bottom;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.mars{
+    position: fixed;
+    width: 100%;
+    height: 10.5rem;
+    z-index: -1;
+    background-color: #913a25;
+    border-top: 1rem solid #d15f44;
+    bottom: 0;
+}
+.planet{
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    z-index: -2;
+    animation: rise 10s ease-in 1;
+    animation-fill-mode: forwards;
+    left: 30%;
+}
+@keyframes rise{
+    from{
+        bottom: 0;
+        transform: rotateZ(0) scale(1);
+    }
+    to{
+        bottom: 75%;
+        transform: rotateZ(180deg) scale(2); 
+    }
+}
+@keyframes rotate{
+    from{
+        transform: rotateZ(-5deg)
+    }
+    to{
+        transform:rotateZ(-33deg)
+    }
+}
+@keyframes rover{
+    from{
+        left: 0;
+    }
+    to{
+        left:900px;
+    }
+}
