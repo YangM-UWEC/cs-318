@@ -93,6 +93,7 @@ header nav.show{
 section{
     padding: 1rem;
 }
+/*mountains is spelled wrong on next line*/
 .routes, .mountians{
     background-color: #1c2541;
 }
@@ -121,6 +122,7 @@ padding: .5rem 0;
 }
 form{
     background-color: #00000080;
+    /*Missing padding:1rem; on form*/
 }
 label, input[type=text], [type=email], textarea{
     display: block;
@@ -167,9 +169,11 @@ footer{
         text-decoration: none;
     }
     .social{
+        /*This should be padding-right:2rem;*/
         padding: right 2rem;
     }
     h1{
+        /*This should be margin-left:-16rem;*/
         margin: left -16rem;
     }
     .call-to-action{
@@ -177,6 +181,7 @@ footer{
     }
     .call-to-action h2{
         font-size: 5rem;
+        /*This should be margin-bottom:1rem;*/
         margin: bottom 1rem;
     }
     p, h3{
@@ -202,7 +207,7 @@ footer{
     }
     .routes{
         display: grid;
-        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 25px auto;
         grid-gap: 1rem;
     }
