@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <img src="images/bread resize.png" alt="">
+        <h1>
+            Order
+        </h1>
+        <div class="options" onclick="toggleNav()">
+            <hr>
+            <hr>
+            <hr>
+        </div>
+        <div class="overlay toggle-nav">
+
+        </div>
+        <nav class="toggle-nav"> 
+           <h1> <a href="homepage.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+        </h1>
+        </nav>
+        
+    </header>
+
+    <main>
+        <form>
+            <div>
+            <label for="name">Name</label>
+            <input type="name" id="name" name="name">
+        </div>
+        <div>  
+        <label for="phone number">Phone Number</label>
+            <input type="phone number" name="number" id="number">
+        </div>
+        <div>
+            <label for="item">Item Name</label>
+            <input type="item" name="item" id="item">
+        </div>
+        <div>    
+        <fieldset>
+            <legend>Options</legend>
+            <label for="options">Pickup</label>
+            <input type="radio" name="options">
+            
+            <label for="options">Delivery</label>
+            <input type="radio" name="options">
+        </fieldset>
+        </div>
+        <div>
+        <input type="submit">
+    </div>
+    </form>
+
+
+
+
+    </main>
+</body>
+</html>
